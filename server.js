@@ -31,7 +31,7 @@ function populateCountryRateData() {
         countryList.push(...countryListResp.data.filter((item) => item.currencies && item.currencies.length > 0 && currencyList.includes(item.currencies[0].code)).map(async (item) => {
             const countryItem = {
                 name: item.name,
-                code: item.alpha3Code,
+                code: item.alpha2Code,
                 flag: item.flag,
                 currencyCode: item.currencies[0].code,
                 currencyName: item.currencies[0].name,
