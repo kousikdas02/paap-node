@@ -32,6 +32,7 @@ function populateCountryRateData() {
             const countryItem = {
                 name: item.name,
                 code: item.alpha2Code,
+                continent: item.region,
                 flag: item.flag,
                 currencyCode: item.currencies[0].code,
                 currencyName: item.currencies[0].name,
